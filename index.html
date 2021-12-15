@@ -12,11 +12,11 @@
                 <a href="/">RUN BUDDY</a>
             </h1> 
             <nav>
-                <!--Unordered list element-->
+                <!--Unordered list element -->
                 <ul>
-                    <!--List item element--> 
+                    <!--List item element --> 
                     <li>
-                        <!--Anchor element--> 
+                        <!--Anchor element --> 
                         <a href= "#what-we-do">What We Do</a>
                     </li>
                     <li>
@@ -32,11 +32,41 @@
             </nav>
         </header> 
 
-        <!--Hero/Jumbotron--> 
+        <!--Hero/Jumbotron its called hHero because its the oart that gets seen the most and gains user engagement --> 
         <section>
-
+            <div>
+                <h3>Get Started Today</h3>
+                <p>Fill this form and one of our trainers will schedule a consul</p>
+                <!-- Add form element. This element is what creates a place for users input information --> 
+                <form>
+                    <label for="name">Enter full name:</label> 
+                   <!-- Must add "for" in imput to "form" to link it to "input" Through the "id" in the "input" -->
+                    <input type="text" placeholder="Your Name" name="name" id="name" /> 
+                    <label for="email">Enter email address:</label>
+                    <input type="email" placeholder="Email Adress" name="email" id="email" /> 
+                    <label for="phone">Enter a telephone number:</label> 
+                    <!-- Changed the "type" of input based on what kind of info the user was going to put in such as numbers -->
+                    <input type="tel" placeholder="Phone Number" name="phone" id="Phone" /> 
+                    <p>
+                        Have you ever worked out with a trainer before?
+                        <!-- using inputs agin but using an element with one option called "radio" button, in th "type" instead of "text" -->
+                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                        <label for="trainer-yes">Yes</label>
+                        <input type="radio" name="trainer-confirm" id="trainer-no" /> 
+                        <label for="trainer-no">No</label>
+                    </p> 
+                    <p>
+                        <label for="checkbox">I acknowledge taht I am at least 18 years of age</label> 
+                        <input type="checkbox" name="age-confirm" id="chackbox" /> 
+                    </p> 
+                    <button type="submit"> 
+                        Get running! 
+                    </button>
+                </form>
+            </div>
         </section> 
-
+        <!-- End of Hero -->
+       
         <!--"What we do" section--> 
         <section>
             <h2>What We Do</h2>
@@ -62,9 +92,9 @@
             <h2>❤️  Made With Love By Run Buddy.</h2> 
             <!--Privacy poliocy place holder-->
             <div>
-                <!--The "<br />"" is a link break to separate the next two lines of code. The "# is also a place holder and will be updated later"-->
+                <!--The "<br />"" is a link break to separate the next two lines of code. The "# is also a place holder and will be updated later" -->
                 <a href="#">Read Our Privacy Policy</a><br />
-               <!-- The "&" character is used to represent spacial characters. The copyright symbol in this cas-->
+               <!-- The "&" character is used to represent spacial characters. The copyright symbol in this cas -->
                 &copy; 2019 Run Buddy, Inc.
             </div>
         </footer>
