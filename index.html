@@ -33,20 +33,20 @@
         </header> 
 
         <!--Hero/Jumbotron its called hHero because its the oart that gets seen the most and gains user engagement --> 
-        <section>
-            <div>
+        <section class="hero">
+            <div class="hero-form">
                 <h3>Get Started Today</h3>
                 <p>Fill this form and one of our trainers will schedule a consul</p>
                 <!-- Add form element. This element is what creates a place for users input information --> 
-                <form>
+                <form >
                     <label for="name">Enter full name:</label> 
                    <!-- Must add "for" in imput to "form" to link it to "input" Through the "id" in the "input" -->
-                    <input type="text" placeholder="Your Name" name="name" id="name" /> 
-                    <label for="email">Enter email address:</label>
-                    <input type="email" placeholder="Email Adress" name="email" id="email" /> 
+                    <input type="text"  placeholder="Your Name" name="name" id="name" class="form-input" /> 
+                    <label for="email" >Enter email address:</label>
+                    <input type="email"  placeholder="Email Adress" name="email" id="email" class="form-input" /> 
                     <label for="phone">Enter a telephone number:</label> 
                     <!-- Changed the "type" of input based on what kind of info the user was going to put in such as numbers -->
-                    <input type="tel" placeholder="Phone Number" name="phone" id="Phone" /> 
+                    <input type="tel"  placeholder="Phone Number" name="phone" id="Phone" class="form-input" /> 
                     <p>
                         Have you ever worked out with a trainer before?
                         <!-- using inputs agin but using an element with one option called "radio" button, in th "type" instead of "text" -->

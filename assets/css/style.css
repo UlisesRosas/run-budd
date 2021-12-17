@@ -77,3 +77,82 @@ footer a {
   color: #024e76;
 } 
 
+/*we are keeping the padding for all <section> elemenmts consistent*/
+section {
+  padding: 60px;
+} 
+
+/* Hero style start. */ 
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+  height: 600px; 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}  
+/* Hero Style End */ 
+
+/* this styles everything that is inside the her "div" and is selected through a class called ".hero-form" */
+.hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76; 
+ /* this short hand includes three properties in one style, width and color. */
+  border: solid 3px #024e76;
+}
+
+
+/* We are positioning the hero form relative to it's container. */
+.hero-form{
+  border: 3px solid #024e76;
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  position: absolute;
+  /* There is no off set from thew bottom rightso the hero form will appear on the bottom right of the page */
+  bottom: 120px;
+  right: 140px;
+} 
+
+
+/* style the <p> elements for the "hero-form". paying attention to the top and bottom margin*/ 
+.hero-form p {
+  margin: 5px 0 15px 0;
+} 
+
+
+.hero-form h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+
+/* made a class for "<input>" element to only style the input boxes */
+.form-input {
+  border: 1px solid #024e76;
+  /* makes the input box go belowto the next line */
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  /* makes the input box be the width of the container */
+  width: 100%;
+  margin-bottom: 15px;
+} 
+
+/* moving all the labels away from the radio buttons by ading vertical(left and right) margin to make it clearto read */ 
+.hero-form label {
+  margin: 0 5px;
+} 
+
+/* styled the button */
+.hero-form button {
+  color: #fce138;
+  background-color: #024e76; 
+  font-size: 16px;
+  padding: 10px 20px; 
+  border: none;
+}
