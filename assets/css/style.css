@@ -9,61 +9,61 @@ body {
     /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
-  } 
- 
+  }
+
   /* apply styles to <header> */
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
-} 
+}
 header h1 {
   font-weight: bold;
   font-size: 36px;
   color: #fce138;
-  margin: 0; 
+  margin: 0;
  /*allows the list items to come in line with thw words "Run Buddy"*/
   display: inline;
 }
 
 header a {
-  color: #fce138; 
+  color: #fce138;
   /*Removes under lines from anchored links that are set as default by HTML*/
   text-decoration: none;
   color: #fce138;
-} 
+}
 
 header nav {
   /* Moves the list to the right of the webpage */
   float: right;
   margin: 7px 0;
-} 
+}
 
 /*Think of this as a path*/
 header nav ul li {
   /* Puts the block element in line instead of jumnping to next line after eacvh list item*/
   display: inline;
-} 
+}
 
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
-} 
+}
 
 /*Styled the footer*/
 footer {
   background: #fce138;
   width: 100%;
   padding: 40px 35px;
-} 
+}
 
 /*syle the "h2" portion. we also made "<h2>" in to an inline element ot place "<a>" next to it on the right*/
 footer h2 {
   display: inline;
-  color: #024e76; 
+  color: #024e76;
   font-size: 30px;
   margin: 0;
-} 
+}
 
 footer div {
   float: right;
@@ -71,33 +71,33 @@ footer div {
   line-height: 1.5;
   /*  "text-align" lets us align text left, right, center or justified*/
   text-align: right;
-} 
+}
 
 footer a {
   color: #024e76;
-} 
+}
 
 /*we are keeping the padding for all <section> elemenmts consistent*/
 section {
   padding: 60px;
-} 
+}
 
-/* Hero style start. */ 
+/* Hero style start. */
 .hero {
   background-image: url("../images/hero-bg.jpg");
-  height: 600px; 
+  height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
-}  
-/* Hero Style End */ 
+}
+/* Hero Style End */
 
 /* this styles everything that is inside the her "div" and is selected through a class called ".hero-form" */
 .hero-form {
   background-color: #fce138;
   padding: 20px;
   width: 500px;
-  color: #024e76; 
+  color: #024e76;
  /* this short hand includes three properties in one style, width and color. */
   border: solid 3px #024e76;
 }
@@ -114,13 +114,13 @@ section {
   /* There is no off set from thew bottom rightso the hero form will appear on the bottom right of the page */
   bottom: 120px;
   right: 140px;
-} 
+}
 
 
-/* style the <p> elements for the "hero-form". paying attention to the top and bottom margin*/ 
+/* style the <p> elements for the "hero-form". paying attention to the top and bottom margin*/
 .hero-form p {
   margin: 5px 0 15px 0;
-} 
+}
 
 
 .hero-form h3 {
@@ -140,40 +140,28 @@ section {
   /* makes the input box be the width of the container */
   width: 100%;
   margin-bottom: 15px;
-} 
+}
 
-/* moving all the labels away from the radio buttons by ading vertical(left and right) margin to make it clearto read */ 
+/* moving all the labels away from the radio buttons by ading vertical(left and right) margin to make it clearto read */
 .hero-form label {
   margin: 0 5px;
-} 
+}
 
 /* styled the button */
 .hero-form button {
   color: #fce138;
-  background-color: #024e76; 
+  background-color: #024e76;
   font-size: 16px;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   border: none;
-} 
+}
 
 /* centering the text under "what we do" section */
 .intro {
   text-align: center;
-} 
+}
 
-/* styled the "<h2>" element in this section */
-.intro h2 {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  border-bottom: 3px solid;
-  border-color: #fce138; 
-/* we added in line because if we leave as block element then the yellow line will extend to the full screen */
-  display: inline-block;
-} 
-
-/* cleaning up the paragraph in the "what we do section" */ 
+/* cleaning up the paragraph in the "what we do section" */
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
@@ -181,4 +169,54 @@ section {
   font-size: 20px;
   /*  used this to center paragraph again since its a block element witha width less than 100% */
   margin: 0 auto;
+}
+
+/* style the "what you do section" */
+.steps {
+  text-align: center;
+  background: #fce138;
+}
+
+/* consolidated  css rules for ".steps" and ".intro" and created 3 new classes*/
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+
+/* cloeaning up the style on the ".steps section" */
+.steps div {
+  margin-bottom: 80px;
+}
+
+.steps img {
+  width: 15%;
+  margin: 10px 0;
+}
+
+.steps h3 {
+  color:#024e76;
+  font-size: 46px;
+  margin-top: 10px;
+}
+
+.steps p {
+  color:#39a6b2;
+  font-size: 23px;
+}
+
+/* calling the "<span>" element to create a difference in size with in the headings */ 
+.steps span {
+  font-size: 30px;
 }
