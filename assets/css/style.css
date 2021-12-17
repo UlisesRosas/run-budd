@@ -154,4 +154,31 @@ section {
   font-size: 16px;
   padding: 10px 20px; 
   border: none;
+} 
+
+/* centering the text under "what we do" section */
+.intro {
+  text-align: center;
+} 
+
+/* styled the "<h2>" element in this section */
+.intro h2 {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  border-bottom: 3px solid;
+  border-color: #fce138; 
+/* we added in line because if we leave as block element then the yellow line will extend to the full screen */
+  display: inline-block;
+} 
+
+/* cleaning up the paragraph in the "what we do section" */ 
+.intro p {
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  font-size: 20px;
+  /*  used this to center paragraph again since its a block element witha width less than 100% */
+  margin: 0 auto;
 }
