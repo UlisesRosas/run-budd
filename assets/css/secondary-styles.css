@@ -1,0 +1,51 @@
+/* this styel sheet only applies to the privacy-policy.html file */
+
+.hero {
+    background-position: bottom;
+    height: auto;
+    text-align: center; 
+    margin-bottom: 40px;
+} 
+
+/* Style the title of the hero section */
+.page-title {
+    color: #fce138; 
+    display: inline-block;
+    border-bottom: 4px solid #fce138;
+    padding: 0 80px 15px 80px; 
+    font-weight: normal;
+    font-size: 42px;
+    font-style: italic;
+} 
+
+/* Styling the article section */ 
+.secondary-content {
+    width: 80%;
+    margin: auto;
+    color: #024e76;   
+} 
+
+/* style the headers in the article section */
+.secondary-content h3 {
+    font-size: 25px;
+    margin: 20px 0 20px 0; 
+}
+
+/* style the paragraph of the article */
+.secondary-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0 20px 0;
+} 
+
+/* style the unordered list of the article */
+.secondary-content ul {
+    margin: 15px 20px 15px 20px; 
+} 
+
+/* style the list items in the article */ 
+.secondary-content li {
+    color: #39a6b2;
+    margin: 10px 0 10px 0;
+} 
+/* end of article section style */

@@ -90,7 +90,9 @@ section {
   background-position: center;
   position: relative;
 }
-/* Hero Style End */
+/* Hero Style End */ 
+
+
 
 /* this styles everything that is inside the her "div" and is selected through a class called ".hero-form" */
 .hero-form {
@@ -247,7 +249,7 @@ section {
   width: 65%;
 }
 
-/*  more utility claSS to fix things. text in this case. */
+/*  more utility class to fix things. text in this case. */
 .text-left {
   text-align: left;
 }
@@ -289,7 +291,7 @@ section {
    height:400px;
  } 
 
- /* turning these two dives nexxt to each other */
+ /* turning these two dives next to each other insdide parent containerp*/
  .contact-info div {
   width: 410px;
   display: inline-block;
