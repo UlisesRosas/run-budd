@@ -171,9 +171,7 @@ section {
 }
 
 /* centering the text under "what we do" section */
-.intro {
-  text-align: center;
-}
+
 
 /* cleaning up the paragraph in the "what we do section" */
 .intro p {
@@ -183,11 +181,12 @@ section {
   font-size: 20px;
   /*  used this to center paragraph again since its a block element witha width less than 100% */
   margin: 0 auto;
+  text-align: center;
 }
 
 /* style the "what you do section" */
 .steps {
-  text-align: center;
+ 
   background: #fce138;
 }
 
@@ -195,9 +194,10 @@ section {
 .section-title {
   font-size: 55px;
   color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
   border-bottom: 3px solid;
 }
 
@@ -237,7 +237,7 @@ section {
 
 /* styling the "Meet the trainers section" */
 .trainers {
-  text-align: center;
+ 
 }
 
 /* styles the article element inside of the section */
@@ -261,15 +261,6 @@ section {
   width: 65%;
 }
 
-/*  more utility class to fix things. text in this case. */
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
 /* Used to style spcific parts of the trainers <article> section */
 .trainer-bio h3 {
   font-size: 32px;
@@ -289,7 +280,7 @@ section {
 
 /* create new rules to style "reach out section" */ 
 .contact {
-  text-align: center;
+  
   background: #024e76;
 } 
 
@@ -329,4 +320,18 @@ section {
   color: #fce138;
 }
 
-/* REACH OUT STYLES END */
+/* REACH OUT STYLES END */ 
+
+/*  more utility class to fix things. text in this case. */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+} 
+
+/* This adds flex box to any container*/
+.flex-row {
+  display: flex;
+}
