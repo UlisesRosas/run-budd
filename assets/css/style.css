@@ -15,14 +15,20 @@ body {
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
+  /* used flex box to mkae in to row as default and to manage screen size variation */
+  display: flex;
+  /* this applies to the flex property to move it space the elements inside parent*/ 
+  justify-content: space-between;
+  /* use to make element go to next line when it runs out of space. it has default value of none */
+  flex-wrap: wrap;
 }
+
 header h1 {
   font-weight: bold;
   font-size: 36px;
   color: #fce138;
   margin: 0;
- /*allows the list items to come in line with thw words "Run Buddy"*/
-  display: inline;
+ 
 }
 
 header a {
@@ -33,8 +39,7 @@ header a {
 }
 
 header nav {
-  /* Moves the list to the right of the webpage */
-  float: right;
+
   margin: 7px 0;
 }
 
