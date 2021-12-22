@@ -59,23 +59,25 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
-/*Styled the footer*/
+/*Styled the footer. Added flexbox*/
 footer {
   background: #fce138;
   width: 100%;
   padding: 40px 35px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/*syle the "h2" portion. we also made "<h2>" in to an inline element ot place "<a>" next to it on the right*/
+/* removed in line property because we added flex box to the footer*/
 footer h2 {
-  display: inline;
   color: #024e76;
   font-size: 30px;
   margin: 0;
 }
 
 footer div {
-  float: right;
+ 
   /* "linr-height" controls the space in between lines of text*/
   line-height: 1.5;
   /*  "text-align" lets us align text left, right, center or justified*/
@@ -93,25 +95,14 @@ section {
 
 /* Hero style start. */
 .hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background-image: url("../images/hero-bg.jpg");
-  height: 600px;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 /* Hero Style End */ 
-
-
-
-/* this styles everything that is inside the her "div" and is selected through a class called ".hero-form" */
-.hero-form {
-  background-color: #fce138;
-  padding: 20px;
-  width: 500px;
-  color: #024e76;
- /* this short hand includes three properties in one style, width and color. */
-  border: solid 3px #024e76;
-}
 
 
 /* We are positioning the hero form relative to it's container. */
@@ -119,24 +110,36 @@ section {
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
-  width: 500px;
   color: #024e76;
-  position: absolute;
-  /* There is no off set from thew bottom rightso the hero form will appear on the bottom right of the page */
-  bottom: 120px;
-  right: 140px;
+  width: 40%;
+  margin: 3.5%;
 }
-
 
 /* style the <p> elements for the "hero-form". paying attention to the top and bottom margin*/
 .hero-form p {
   margin: 5px 0 15px 0;
 }
 
-
 .hero-form h3 {
   font-size: 24px;
   margin: 0;
+} 
+
+/* changes the width of the call to action part of the hero */
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+} 
+
+/* style the heading of the call to action */
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: #fce138;
 }
 
 
